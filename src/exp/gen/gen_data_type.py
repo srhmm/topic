@@ -1,11 +1,11 @@
 import numpy as np
 from numpy.random import SeedSequence
 
-from exp.experiment import Experiment
-from exp.util.ty import ExpType
-from exp.gen.gen_continuous import gen_continuous_data, gen_context_data
-from exp.gen.gen_time import gen_time_data
-from topic.scoring.fitting import DataType
+from .exp.experiment import Experiment
+from .exp.util.ty import ExpType
+from .exp.gen.gen_continuous import gen_continuous_data, gen_context_data
+from .exp.gen.gen_time import gen_time_data
+from .topic.scoring.fitting import DataType
 
 
 def gen_data(experiment: Experiment, params, seed):

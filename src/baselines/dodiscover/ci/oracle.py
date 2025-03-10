@@ -4,7 +4,7 @@ import networkx as nx
 import numpy as np
 import pandas as pd
 
-from baselines.dodiscover.typing import Column
+from .baselines.dodiscover.typing import Column
 
 from .._protocol import Graph
 from .base import BaseConditionalIndependenceTest

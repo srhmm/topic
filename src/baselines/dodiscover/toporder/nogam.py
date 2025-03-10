@@ -5,8 +5,8 @@ from numpy.typing import NDArray
 from sklearn.kernel_ridge import KernelRidge
 from sklearn.model_selection import cross_val_predict
 
-from baselines.dodiscover.toporder._base import BaseTopOrder, SteinMixin
-from baselines.dodiscover.toporder.utils import full_dag, pns
+from .baselines.dodiscover.toporder._base import BaseTopOrder, SteinMixin
+from .baselines.dodiscover.toporder.utils import full_dag, pns
 
 
 class NoGAM(BaseTopOrder, SteinMixin):

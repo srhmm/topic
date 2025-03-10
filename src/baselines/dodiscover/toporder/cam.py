@@ -4,8 +4,8 @@ import networkx as nx
 import numpy as np
 from numpy.typing import NDArray
 
-from baselines.dodiscover.toporder._base import BaseTopOrder
-from baselines.dodiscover.toporder.utils import full_adj_to_order, pns
+from .baselines.dodiscover.toporder._base import BaseTopOrder
+from .baselines.dodiscover.toporder.utils import full_adj_to_order, pns
 
 
 class CAM(BaseTopOrder):

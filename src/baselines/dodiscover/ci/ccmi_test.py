@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import sklearn.metrics
 
-from baselines.dodiscover.typing import Column
+from .baselines.dodiscover.typing import Column
 
 from .base import BaseConditionalIndependenceTest, ClassifierCIMixin, CMIMixin
 from .kernel_utils import f_divergence_score, kl_divergence_score

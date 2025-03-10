@@ -7,8 +7,8 @@ from joblib import Parallel, delayed
 from numpy.typing import ArrayLike
 from sklearn.linear_model import LogisticRegression
 
-from baselines.dodiscover.ci.kernel_utils import _default_regularization
-from baselines.dodiscover.typing import Column
+from .baselines.dodiscover.ci.kernel_utils import _default_regularization
+from .baselines.dodiscover.typing import Column
 
 
 class BaseConditionalDiscrepancyTest(metaclass=ABCMeta):

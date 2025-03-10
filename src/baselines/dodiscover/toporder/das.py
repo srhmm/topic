@@ -4,8 +4,8 @@ import numpy as np
 from numpy.typing import NDArray
 from scipy.stats import ttest_ind
 
-from baselines.dodiscover.toporder.score import SCORE
-from baselines.dodiscover.toporder.utils import full_adj_to_order
+from .baselines.dodiscover.toporder.score import SCORE
+from .baselines.dodiscover.toporder.utils import full_adj_to_order
 
 
 class DAS(SCORE):

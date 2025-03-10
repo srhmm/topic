@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 from numpy.typing import ArrayLike
 
-from baselines.dodiscover.ci.kernel_utils import _default_regularization, compute_kernel
-from baselines.dodiscover.typing import Column
+from .baselines.dodiscover.ci.kernel_utils import _default_regularization, compute_kernel
+from .baselines.dodiscover.typing import Column
 
 from .base import BaseConditionalDiscrepancyTest
 

@@ -1,6 +1,6 @@
 """Experiments for linear Gaussian SEM with two variables."""
 from notears import utils
-from baselines.notears import notears
+from .baselines.notears import notears
 import numpy as np
 from tqdm import tqdm
 from collections import defaultdict

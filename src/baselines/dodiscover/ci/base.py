@@ -6,7 +6,7 @@ import pandas as pd
 import sklearn.utils
 from numpy.typing import ArrayLike
 
-from baselines.dodiscover.typing import Column
+from .baselines.dodiscover.typing import Column
 
 from .monte_carlo import generate_knn_in_subspace, restricted_nbr_permutation
 

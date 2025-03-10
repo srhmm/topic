@@ -8,7 +8,7 @@ import scipy.special
 from numpy.typing import ArrayLike
 from sklearn.preprocessing import StandardScaler
 
-from baselines.dodiscover.typing import Column
+from .baselines.dodiscover.typing import Column
 
 from .base import BaseConditionalIndependenceTest, CMIMixin
 

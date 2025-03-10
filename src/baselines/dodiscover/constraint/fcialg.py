@@ -5,11 +5,11 @@ from typing import List, Optional, Set, Tuple
 import networkx as nx
 import pandas as pd
 
-from baselines.dodiscover.ci.base import BaseConditionalIndependenceTest
-from baselines.dodiscover.constraint.config import ConditioningSetSelection
-from baselines.dodiscover.constraint.skeleton import LearnSemiMarkovianSkeleton
-from baselines.dodiscover.constraint.utils import is_in_sep_set
-from baselines.dodiscover.typing import Column, SeparatingSet
+from .baselines.dodiscover.ci.base import BaseConditionalIndependenceTest
+from .baselines.dodiscover.constraint.config import ConditioningSetSelection
+from .baselines.dodiscover.constraint.skeleton import LearnSemiMarkovianSkeleton
+from .baselines.dodiscover.constraint.utils import is_in_sep_set
+from .baselines.dodiscover.typing import Column, SeparatingSet
 
 from .._protocol import EquivalenceClass
 from ..context import Context
@@ -830,7 +830,7 @@ class FCI(BaseConstraintDiscovery):
         if context is None:
             # make a private Context object to store causal context used in this algorithm
             # store the context
-            from baselines.dodiscover.context_builder import make_context
+            from .baselines.dodiscover.context_builder import make_context
 
             context = make_context().build()
 

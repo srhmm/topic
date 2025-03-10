@@ -6,7 +6,7 @@ import scipy.special
 import sklearn.metrics
 from sklearn.utils import check_random_state
 
-from baselines.dodiscover.typing import Column
+from .baselines.dodiscover.typing import Column
 
 from .base import BaseConditionalIndependenceTest, ClassifierCIMixin
 from .typing import Classifier

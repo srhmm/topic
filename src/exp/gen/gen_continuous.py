@@ -10,11 +10,11 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import PolynomialFeatures
 
 
-from exp.util.HEC import *
-from exp.util.ty import NoiseType, FunType, DagType
-from exp.util.utils_conversions import convert_contexts_to_stack, convert_hard_interventions_to_idls
+from .exp.util.HEC import *
+from .exp.util.ty import NoiseType, FunType, DagType
+from .exp.util.utils_conversions import convert_contexts_to_stack, convert_hard_interventions_to_idls
 
-from topic.scoring.fitting import DataType
+from .topic.scoring.fitting import DataType
 
 
 def gen_intervention_targets(params, graph, random_state):

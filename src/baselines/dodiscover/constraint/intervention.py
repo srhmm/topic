@@ -5,11 +5,11 @@ from typing import FrozenSet, List, Optional, Tuple
 import networkx as nx
 import pandas as pd
 
-from baselines.dodiscover._protocol import EquivalenceClass
-from baselines.dodiscover.cd import BaseConditionalDiscrepancyTest
-from baselines.dodiscover.ci import BaseConditionalIndependenceTest
-from baselines.dodiscover.context import Context
-from baselines.dodiscover.typing import Column, SeparatingSet
+from .baselines.dodiscover._protocol import EquivalenceClass
+from .baselines.dodiscover.cd import BaseConditionalDiscrepancyTest
+from .baselines.dodiscover.ci import BaseConditionalIndependenceTest
+from .baselines.dodiscover.context import Context
+from .baselines.dodiscover.typing import Column, SeparatingSet
 
 from .config import ConditioningSetSelection
 from .fcialg import FCI
@@ -141,7 +141,7 @@ class PsiFCI(FCI):
         if context is None:
             # make a private Context object to store causal context used in this algorithm
             # store the context
-            from baselines.dodiscover.context_builder import make_context
+            from .baselines.dodiscover.context_builder import make_context
 
             context = make_context().build()
 
@@ -191,7 +191,7 @@ class PsiFCI(FCI):
         if context is None:
             # make a private Context object to store causal context used in this algorithm
             # store the context
-            from baselines.dodiscover.context_builder import make_context
+            from .baselines.dodiscover.context_builder import make_context
 
             context = make_context().build()
 

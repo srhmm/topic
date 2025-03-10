@@ -11,8 +11,8 @@ from pygam import LinearGAM, s
 from pygam.terms import Term, TermList
 from sklearn.metrics.pairwise import rbf_kernel
 
-from baselines.dodiscover.context import Context
-from baselines.dodiscover.toporder.utils import full_adj_to_order, full_dag, kernel_width
+from .baselines.dodiscover.context import Context
+from .baselines.dodiscover.toporder.utils import full_adj_to_order, full_dag, kernel_width
 
 # -------------------- Mixin class with Stein estimators -------------------- #
 
@@ -599,7 +599,7 @@ class BaseTopOrder(CAMPruning, TopOrderInterface):
         if context is None:
             # make a private Context object to store causal context used in this algorithm
             # store the context
-            from baselines.dodiscover.context_builder import make_context
+            from .baselines.dodiscover.context_builder import make_context
 
             context = make_context().build()
 

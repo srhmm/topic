@@ -11,8 +11,8 @@ import pandas as pd
 from numpy.typing import ArrayLike
 from scipy import stats
 
-from baselines.dodiscover.ci.base import BaseConditionalIndependenceTest
-from baselines.dodiscover.typing import Column
+from .baselines.dodiscover.ci.base import BaseConditionalIndependenceTest
+from .baselines.dodiscover.typing import Column
 
 
 def power_divergence(

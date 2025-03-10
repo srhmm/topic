@@ -3,8 +3,8 @@ from typing import Set
 import networkx as nx
 import pandas as pd
 
-from baselines.dodiscover import Graph
-from baselines.dodiscover.typing import SeparatingSet
+from .baselines.dodiscover import Graph
+from .baselines.dodiscover.typing import SeparatingSet
 
 
 def dummy_sample(G: Graph):

@@ -7,12 +7,12 @@ import networkx as nx
 import numpy as np
 from graphical_models.rand import unif_away_zero
 
-from exp.util.ty import NoiseType
-from exp.gen.context_model import ContextModelTSWithRegimes
-from exp.util.eval import get_adj_from_true_links, convert_wcg_to_nx_digraph
-from exp.util.utils_conversions import convert_contexts_to_stack, convert_contexts_to_labelled_stack
+from .exp.util.ty import NoiseType
+from .exp.gen.context_model import ContextModelTSWithRegimes
+from .exp.util.eval import get_adj_from_true_links, convert_wcg_to_nx_digraph
+from .exp.util.utils_conversions import convert_contexts_to_stack, convert_contexts_to_labelled_stack
 
-from topic.scoring.fitting import DataType
+from .topic.scoring.fitting import DataType
 
 
 def r_partition_to_windows_T(r_partition, skip):

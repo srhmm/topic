@@ -93,7 +93,7 @@ class GIN:
         if context is None:
             # make a private Context object to store causal context used in this algorithm
             # store the context
-            from baselines.dodiscover.context_builder import make_context
+            from .baselines.dodiscover.context_builder import make_context
 
             context = make_context().build()
 

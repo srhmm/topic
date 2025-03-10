@@ -5,7 +5,7 @@ import pandas as pd
 from numpy.typing import NDArray
 from scipy.stats import chi2
 
-from baselines.dodiscover.typing import Column
+from .baselines.dodiscover.typing import Column
 
 from .base import BaseConditionalIndependenceTest
 

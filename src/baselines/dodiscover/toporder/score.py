@@ -3,8 +3,8 @@ from typing import List, Optional, Tuple
 import numpy as np
 from numpy.typing import NDArray
 
-from baselines.dodiscover.toporder._base import BaseTopOrder, SteinMixin
-from baselines.dodiscover.toporder.utils import full_dag, pns
+from .baselines.dodiscover.toporder._base import BaseTopOrder, SteinMixin
+from .baselines.dodiscover.toporder.utils import full_dag, pns
 
 
 class SCORE(BaseTopOrder, SteinMixin):

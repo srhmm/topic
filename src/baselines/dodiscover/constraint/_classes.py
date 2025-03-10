@@ -6,10 +6,10 @@ import networkx as nx
 import numpy as np
 import pandas as pd
 
-from baselines.dodiscover.ci.base import BaseConditionalIndependenceTest
-from baselines.dodiscover.constraint.skeleton import ConditioningSetSelection
-from baselines.dodiscover.context import Context
-from baselines.dodiscover.typing import Column, SeparatingSet
+from .baselines.dodiscover.ci.base import BaseConditionalIndependenceTest
+from .baselines.dodiscover.constraint.skeleton import ConditioningSetSelection
+from .baselines.dodiscover.context import Context
+from .baselines.dodiscover.typing import Column, SeparatingSet
 
 from .._protocol import EquivalenceClass
 
@@ -215,7 +215,7 @@ class BaseConstraintDiscovery:
         if context is None:
             # make a private Context object to store causal context used in this algorithm
             # store the context
-            from baselines.dodiscover.context_builder import make_context
+            from .baselines.dodiscover.context_builder import make_context
 
             context = make_context().build()
         self.context_ = context.copy()
