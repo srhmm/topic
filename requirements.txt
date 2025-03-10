@@ -1,7 +1,7 @@
 causal_learn==0.1.3.3 
 causaldag==0.1a163
 CausalDisco==0.2.0
-causalnex==0.12.1
+causalnex
 cdt==0.6.0
 conditional_independence==0.1a6 
 GPy==1.13.2
