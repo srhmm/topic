@@ -9,7 +9,7 @@ graphical_models==0.1a21
 ipdb==0.13.13
 joblib==1.4.2
 lingam==1.9.1
-matplotlib==3.10.1
+matplotlib==3.10.0
 mpmath==1.3.0
 networkx==3.4.2
 numpy==2.2.3
